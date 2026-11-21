@@ -1,0 +1,27 @@
+{
+  "source_raw": "scanpy.datasets.pbmc3k() / original 10x Genomics PBMC3k",
+  "source_labels": "scanpy.datasets.pbmc3k_processed() / louvain",
+  "cell_type": "CD4 T cells",
+  "gene_symbols": [
+    "LTB",
+    "IL7R",
+    "GAPDH"
+  ],
+  "raw_n_cells": 2700,
+  "raw_n_genes": 32738,
+  "annotated_n_cells": 2638,
+  "selected_cd4_cells": 1144,
+  "similar_depth_cells": 672,
+  "median_total_umis": 2311.0,
+  "min_total_umis": 561,
+  "max_total_umis": 7171,
+  "match_method": "exact matching of cell barcode",
+  "gene_count_data": "raw unnormalized integer UMI counts",
+  "depth_definition": "sum raw UMI counts over all genes for each CD4 T cell",
+  "depth_filter": "0.8 <= total_umis / median(total_umis) <= 1.2; comparison subset only",
+  "warnings": [
+    "Processed annotations are inferred clusters, not independent ground-truth cell identities.",
+    "Depth filtering is a sensitivity analysis and does not remove all sequencing/capture biases.",
+    "Total UMI depth includes target gene counts; consider depth offsets or external normalization factors for advanced modeling."
+  ]
+}
